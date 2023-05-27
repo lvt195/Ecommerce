@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import AllProduct from './pages/AllProduct';
 import Contact from './pages/Contact';
 import Feedback from './pages/Feedback';
+import Searchproduct from './components/Searchproduct';
 
 const App = () => {
   return <div className='overflow-hidden'>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/product/:id' element={<ProductDetails/>}/>
         <Route path='/products/' element={<AllProduct/>}/>
+        <Route path='/searchproduct' element={<Searchproduct/>}/>
         <Route path='/contact/' element={<Contact/>}/>
         <Route path='/feedback/' element={<Feedback/>}/>
       </Routes>

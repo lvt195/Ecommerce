@@ -21,7 +21,7 @@ const Hero = () => {
           <Link to ={'/'} className="self-start uppercse font-semibold border-b-2 border-primary ">Discover More</Link>
         </div>
         {/*image*/}
-        <div>
+        <div className="hidden lg:block">
           <img src={WomanImg} />
         </div>
       </div>
