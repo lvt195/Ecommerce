@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-primary;
+  }
+}
+.search{
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.search input{
+  outline: none;
+}
+.contact-content1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  margin: 140px 0 50px 0;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(https://anviethouse.vn/wp-content/uploads/2021/07/ca-tinh-rieng-cua-shop.jpg) center center / cover no-repeat;
+}
+.contact-content1 h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.contact-content1 h4 {
+  font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contact-content2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-element {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.contact-element-info {
+  border: 5px double #FF6633;
+  color: rgb(28, 28, 28);
+  transform: skew(-3deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+  line-height: 3rem;
+  margin: 0 20px;
+}
+.contact-element-info h2 {
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+}
+.contact-element-info p {
+  display: block;
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
+}
+.contact-element-info span {
+  display: block;
+  font-size: 2rem;
+  margin: 0;
+  text-align: left;
 }
